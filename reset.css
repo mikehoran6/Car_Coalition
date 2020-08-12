@@ -1,0 +1,52 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Reset Stylesheet for Car Coalition
+	Filename: flex.css */
+
+/* ===== Reset Styles ====== */
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Set the default page element styles */
+
+body {
+   line-height: 1.2em;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+a:hover {
+   color: grey;
+}

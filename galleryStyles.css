@@ -1,0 +1,89 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Base Stylesheet for Car Coalition
+	Filename: galleryStyles.css */
+
+h1 {
+	margin: 20px auto;
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 3em;
+}
+h1.sub {
+    margin: 0px;
+    font-size: 1em;
+    font-weight: .6em;
+}
+* {
+	box-sizing: border-box;
+}
+video {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+}
+div#vid {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+/* ------Flexbox Styles ---------*/
+
+/* ======== Desktop Flex =========== */
+@media only screen and (min-width: 481px){ 
+    div.row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 80%;
+        margin: 0px auto;
+    }
+    div.column {
+        -webkit-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+        padding: 5px;
+    }
+    div.column img {
+        width: 100%;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+}
+
+/* ======= Tablet flex ====== */
+@media only screen and (max-width: 800px){
+	div.column {
+        -webkit-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* ======== Mobile Flex =========== */
+
+@media only screen and (max-width: 480px){
+    div.row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 80%;
+        margin: 0px auto;
+    }
+    div.column {
+        -webkit-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 5px;
+    }
+    div.column img {
+        width: 100%;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+}

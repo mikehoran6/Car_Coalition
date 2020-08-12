@@ -1,0 +1,139 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Base Stylesheet for Car Coalition
+	Filename: homeStyles.css */
+
+/* ======= Main Body Styles and Transitions ======== */
+#hero {
+  position: relative;
+  width: 80%;
+  margin: 0px auto;
+}
+
+#hero:hover #imgHero {
+  filter: blur(5px) grayscale(80%) brightness(80%);
+}
+
+#textHero {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5vw;
+  user-select: none;
+}
+
+#Head, #Tail, #Decal, #Strips, #Shirt, #Gallery {
+  position: relative;
+  width: 100%;
+}
+
+#imgHead, #imgTail, #imgDecal, #imgStrips, #imgShirt, #imgGallery, #imgHero {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#centerHead, #centerTail, #centerDecal, #centerStrips, #centerShirt, #centerGallery, #centerHero {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+#centerShirt {
+	line-height: 1.5em;
+}
+
+#Head:hover #imgHead, #Tail:hover #imgTail, #Decal:hover #imgDecal, #Strips:hover #imgStrips, #Shirt:hover #imgShirt, #Gallery:hover #imgGallery {
+  filter: blur(5px) grayscale(80%) brightness(30%);
+}
+
+#Head:hover #centerHead, #Tail:hover #centerTail, #Decal:hover #centerDecal, #Strips:hover #centerStrips, #Shirt:hover #centerShirt, #Gallery:hover #centerGallery, #hero:hover #centerHero {
+  opacity: 1;
+}
+
+#textHead, #textTail, #textDecal, #textStrips, #textShirt, #textGallery {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2vw;
+  user-select: none;
+}
+a.home {
+  color: white;
+}
+a.home:hover {
+  color: rgb(120,120,120);
+}
+
+/* ------- Mobile and Desktop specific styles ---------- */
+
+@media only screen and (max-width: 480px){
+
+	/*Main body*/
+	#imgHead, #imgTail, #imgDecal, #imgStrips, #imgShirt, #imgGallery {
+	    filter: blur(5px) grayscale(80%) brightness(50%);
+	}
+	#centerHead, #centerTail, #centerDecal, #centerStrips, #centerShirt, #centerGallery {
+	    opacity: 1;
+	}
+	#textHead, #textTail, #textDecal, #textStrips, #textShirt, #textGallery {
+		font-size: 7vw;
+	}
+}
+
+/* ------Flexbox Styles ---------*/
+
+/* ======== Desktop Flex =========== */
+@media only screen and (min-width: 481px){ 
+    div.row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 80%;
+        margin: 0px auto;
+    }
+    div.column {
+        -webkit-flex: 33.33%;
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 5px;
+        position: relative;
+    }
+    div.column img {
+        width: 100%;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+}
+
+/* ======== Mobile Flex =========== */
+
+@media only screen and (max-width: 480px){
+    div.row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    div.column {
+        -webkit-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 5px;
+    }
+    div.column div.imgDiv {
+        width: 100%;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+}

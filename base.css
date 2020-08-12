@@ -1,0 +1,129 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Base Stylesheet for Car Coalition
+	Filename: base.css */
+/* ====== Header Styles ========= */
+
+html {
+	height: 100%;
+}
+body {
+ 	width: 100%;
+ 	margin: 0px auto;
+}
+body header {
+	width: 80%;
+	margin: 0px auto;
+	border-bottom: 2px solid black;
+}
+body header img#logo {
+	display: block;
+	width: 35%;
+	margin: 0px auto;
+}
+div#topBar {
+	font-family: 'Staatliches', cursive;
+	font-weight: 2em;
+	display: block;
+	width: 100%;
+	background-color: rgb(230,230,230);
+	text-align: center;
+	font-size: 1.5em;
+	padding: 5px 0px;
+}
+nav#topNav{
+	width: 100%;
+	height: 30px;
+}
+nav#topNav ul li {
+	font-family: 'Staatliches', cursive;
+	float: right;
+	margin: 5px 10px 0px 10px;
+}
+nav#mainNav {
+	text-align: center;
+	width: 70%;
+	margin: 5px auto;
+}
+nav#mainNav li {
+	font-family: 'Staatliches', cursive;
+}
+a#navicon {
+	display: none;
+}
+h1.sub {
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-weight: .6em;
+}
+/* ========== Footer Styles ======== */
+div#footer {
+	width: 80%;
+	margin: 20px auto;
+	font-family: 'Staatliches', cursive;
+}
+div.footSection {
+	width: 50%;
+	height: 75px;
+	float: left;
+	border: 5px solid rgb(220, 220, 220);
+	text-align: center;
+}
+div.footSection h4 {
+	line-height: 2em;
+}
+div.footSection img {
+	background-color: white;
+	width: 30px;
+	height: 30px;
+}
+
+/* ------- Mobile and Desktop specific styles ---------- */
+
+@media only screen and (max-width: 480px){
+
+	/* Header/Hero */
+    body header img#logo {
+		display: block;
+		width: 250px;
+		margin: 0px auto;
+	}
+	a#navicon {
+		display: block;
+	}
+	nav#mainNav ul {
+		display: none;
+	}
+	nav#mainNav li {
+		font-size: 1.2em;
+	}
+	a#navicon:hover+ul, nav#mainNav ul:hover {
+		display: block;
+	}
+	img#imgHero {
+		display: none;
+	}
+	div#footer {
+		font-size: .8em;
+	}
+}
+
+/* ------- Flexbox Styles -------- */
+
+/* ======== Desktop Flex =========== */
+@media only screen and (min-width: 481px){
+    nav#mainNav ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    nav#mainNav li {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+        font-size: 1.6em;
+    }  
+}

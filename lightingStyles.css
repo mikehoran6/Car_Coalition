@@ -1,0 +1,73 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Base Stylesheet for Car Coalition
+	Filename: lightingStyles.css */
+figure {
+	display: block;
+	border: 2px solid rgb(150, 150, 150);
+	border-radius: 40px;
+	margin: 10px;
+}
+
+figcaption {
+	text-align: center;
+}
+div#main {
+	font-family: 'Heebo', sans-serif;
+}
+
+/*============ Flex =========== */
+
+div#main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 20px auto;
+}
+div#sort {
+    -webkit-flex: 1 1 75px;
+    flex: 1 1 75px;
+    max-width: 220px;
+    margin: 0px auto;
+
+}
+div#items {
+    -webkit-flex: 3 1 450px;
+    flex: 3 1 450px;
+}
+div.formRow {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+div.formRow > * {
+	-webkit-flex: 1 1 50px;
+    flex: 1 1 50px;
+}
+fieldset#filter {
+	border-radius: 20px;
+	margin-top: 10px;
+}
+
+div#images {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+div#images figure {
+	margin: 10px auto 0px auto;
+}
+div#images img{
+	-webkit-flex: 1 1 50px;
+    flex: 1 1 50px;
+    margin: 10px;
+    border-radius: 40px;
+}
+

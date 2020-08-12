@@ -1,0 +1,49 @@
+/*  Car Coalition Website
+	Team Project 1
+	Author: Mike Horan
+	Date: 8/5/20
+
+	Base Stylesheet for Car Coalition
+	Filename: aboutStyles.css */
+
+/* ======= Main Styles ======= */
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+}
+p {
+	text-align: center;
+	width: 80%;
+	margin: 5px auto;
+	font-family: 'Staatliches', cursive;
+}
+form#mailing {
+	width: 60%;
+	margin: 10px auto;
+}
+fieldset {
+	font-family: 'Staatliches', cursive;
+}
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px auto;
+}
+
+div.formRow > * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+div#button {
+	width: 100%;
+	text-align: center;
+}
+h1.sub{
+	font-size: 1em;
+	font-weight: .6em;
+}

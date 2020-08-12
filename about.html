@@ -1,0 +1,85 @@
+<!--
+    Car Coalition Website
+    Team Project 1
+
+    Author: Mike Horan
+    Date:   8/5/20
+
+    Filename: about.html
+   -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Car Coalition</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="base.css" />
+	<link rel="stylesheet" type="text/css" href="aboutStyles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">
+	<script defer>
+		function submit() {
+			alert("Thanks for joining our mailing list! We'll keep you updated with anything new and exciting for Car Coalition!");
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="topBar">TAKE 5% OFF WITH CODE "RGB" AT CHECKOUT!</div>
+	<header>
+		<nav id="topNav">
+			<ul>
+				<li><a href="cart.html">Account</a></li>
+				<li><a href="cart.html">My Cart</a></li>
+			</ul>
+		</nav>
+		<a href="home.html"><img id="logo" src="media/logo.jpg" alt="Car Coalition logo"></a>
+		<nav id="mainNav">
+			<a id="navicon" href="#"><img src="media/navicon.png"></a>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="Lighting.html">Lighting</a></li>
+				<li><a href="apparel.html">Apparel</a></li>
+				<li><a href="decals.html">Stickers/Decals</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="sub"><a href="home.html">Home</a>   >>   About Us</h1>
+	<h1>About Car Coalition</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices eros sem, ac faucibus urna volutpat vel. Cras a nulla eleifend, venenatis metus nec, commodo lorem. Maecenas tincidunt pellentesque semper. Proin porttitor scelerisque diam, sit amet rhoncus lectus tincidunt ac. Pellentesque semper cursus efficitur. In sem felis, lacinia scelerisque nisl nec, porta pretium purus. Fusce vitae malesuada odio.
+
+	Aliquam erat volutpat. Nulla congue erat rhoncus odio vehicula luctus. Etiam aliquet molestie mi id pretium. Nulla blandit in purus non lobortis. Maecenas magna metus, porttitor sed facilisis a, accumsan ut augue. Vestibulum posuere tempus justo in interdum. Mauris maximus pulvinar porta. Nam ultrices rhoncus massa et consectetur. Fusce egestas, purus ac finibus congue, eros mi aliquam est, vitae pulvinar arcu nulla eu eros.</p>
+	<form id="mailing">
+		<fieldset id="info">
+			<legend>Subscribe to our Mailing List!</legend>
+			<div class="formRow">
+				<label for="name">Name*</label>
+				<input type="text" name="custName" id="name" required />
+			</div>
+			<div class="formRow">
+				<label for="email">Email*</label>
+				<input type="text" name="custEmail" id="email" required />
+			</div>
+			<div class="formRow">  
+               <label for="phone">Phone number</label>
+               <input type="tel" name="custPhone" id="phone" placeholder="(xxx) xxx-xxxx" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+            </div>
+		</fieldset>
+	</form>
+	<div id="button">
+		<button onclick="submit()">Sign up!</button>
+	</div>
+	<div id="footer">
+		<div class="footSection">
+			<h4>Follow Us On Social Meida!</h4>
+			<a href="http://facebook.com"><img src="media/fb.png"></a>
+			<a href="http://instagram.com"><img src="media/insta.png"></a>
+		</div>
+		<div class="footSection">
+			<h4>Join Our Mailing List!</h4>
+			<a href="about.html">Click here to sign up now!</a>
+		</div>
+	</div>
+</body>
+</html>

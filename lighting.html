@@ -1,0 +1,134 @@
+<!--
+    Car Coalition Website
+    Team Project 1
+
+    Author: Mike Horan
+    Date:   8/5/20
+
+    Filename: lighting.html
+   -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Car Coalition</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="base.css" />
+	<link rel="stylesheet" type="text/css" href="lightingStyles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="lightingScript.js"></script>
+</head>
+<body>
+	<div id="topBar">TAKE 5% OFF WITH CODE "RGB" AT CHECKOUT!</div>
+	<header>
+		<nav id="topNav">
+			<ul>
+				<li><a href="cart.html">Account</a></li>
+				<li><a href="cart.html">My Cart</a></li>
+			</ul>
+		</nav>
+		<a href="home.html"><img id="logo" src="media/logo.jpg" alt="Car Coalition logo"></a>
+		<nav id="mainNav">
+			<a id="navicon" href="#"><img src="media/navicon.png"></a>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="lighting.html">Lighting</a></li>
+				<li><a href="apparel.html">Apparel</a></li>
+				<li><a href="decals.html">Stickers/Decals</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="sub"><a href="home.html">Home</a>   >>   Lighting</h1>
+	<div id="main">
+		<div id="sort">
+			<form>
+				<fieldset id="filter">
+					<legend>Filter Results</legend>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="led" />LEDs</label>
+					</div>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="red" />Red</label>
+					</div>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="white" />White</label>
+					</div>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="blue" />Blue</label>
+					</div>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="rgb" />RGB</label>
+					</div>
+					<div class="formRow">
+						<label><input class="cb" type="checkbox" id="resist" />Resistors</label>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+		<div id="items">
+			<div id="images">
+				<figure class="white led">
+					<a href="#"><img src="media/lighting/white.jpg"></a>
+					<figcaption>White 5mm LEDs</br>
+								(10 pack) - $2.99</figcaption>
+				</figure>
+				<figure class="red led">
+					<a href="#"><img src="media/lighting/red.jpg"></a>
+					<figcaption>Red 5mm LEDs</br>
+								(10 pack) - $2.99</figcaption>
+				</figure>
+				<figure class="blue led">
+					<a href="#"><img src="media/lighting/blue.jpg"></a>
+					<figcaption>Blue 5mm LEDs</br>
+								(10 pack) - $2.99</figcaption>
+				</figure>
+				<figure class="white red blue led">
+					<a href="#"><img src="media/lighting/assort.jpg"></a>
+					<figcaption>Assorted Color 5mm LEDs</br>
+								(5 of each color) - $5.99</figcaption>
+				</figure>
+				<figure class="rgb led">
+					<a href="#"><img src="media/lighting/strips.jpg"></a>
+					<figcaption>RGB LED Strip</br>
+								(60 LED/m) 1m - $15.99</figcaption>
+				</figure>
+				<figure class="resist">
+					<a href="#"><img src="media/lighting/100k.jpg"></a>
+					<figcaption>100k Ohm Resistors</br>
+								(10 pack) - $2.99</figcaption>
+				</figure>
+				<figure class="resist">
+					<a href="#"><img src="media/lighting/rassort.jpg"></a>
+					<figcaption>25 Assorted Resistors</br>
+								(1, 10, 100, 1k, 10k Ohm)</br>
+								$9.99</figcaption>
+				</figure>
+				<figure class="rgb">
+					<a href="#"><img src="media/lighting/control.jpg"></a>
+					<figcaption>RGB LED Controller</br>
+								$25.99</figcaption>
+				</figure>
+				<figure>
+					<a href="#"><img src="media/lighting/wire.jpg"></a>
+					<figcaption>10ft 24awg Wire</br>
+								$5.99</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footSection">
+			<h4>Follow Us On Social Meida!</h4>
+			<a href="http://facebook.com"><img src="media/fb.png"></a>
+			<a href="http://instagram.com"><img src="media/insta.png"></a>
+		</div>
+		<div class="footSection">
+			<h4>Join Our Mailing List!</h4>
+			<a href="about.html">Click here to sign up now!</a>
+		</div>
+	</div>
+</body>
+</html>
