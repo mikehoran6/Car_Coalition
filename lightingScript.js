@@ -2,7 +2,6 @@
 
 window.onload = init;
 
-// ledCheck, redCheck, whiteCheck, blueCheck, rgbCheck, resistCheck
 var filters =  ['led', 'red', 'white', 'blue', 'rgb', 'resist'];
 var checks = [];
 for (var i = 0; i < filters.length; i++){
