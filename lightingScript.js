@@ -30,7 +30,7 @@ function displayItems(e) {
 		var show = document.querySelectorAll('figure.' + filters[i]);
 		if (checks[i] == true) {
 			for (var x = 0; x < show.length; x++) {
-				show[x].style.display = "block"
+				show[x].style.display = "block";
 			}
 			count++;
 		}
